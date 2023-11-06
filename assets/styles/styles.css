@@ -1,11 +1,10 @@
 @font-face {
-  font-family: Gothenburg Fraktur Regular;
-  src: url(../styles/Gothenburg\ Fraktur\ Regular.ttf);
+  font-family: "Gothenburg Fraktur Regular";
+  src: url("../styles/Gothenburg\ Fraktur\ Regular.ttf");
 }
 
 * {
   margin: 0 auto;
-
 }
 
 .master-header {
@@ -28,7 +27,7 @@
   }
 }
 
-@media(min-width: 1024px) {
+@media (min-width: 1024px) {
   .bar1 {
     margin: 0 auto;
     max-width: 1605px;
@@ -85,18 +84,18 @@ a {
 }
 
 #log {
-justify-content: space-between;
-cursor: pointer;
-white-space: nowrap;
-vertical-align: middle;
-background-color: rgb(86, 123, 149);
-border: 1px solid rgb(50, 104, 145);
-font-size: 11px;
-line-height: 11vh;
-font-weight: 700;
-letter-spacing: 0.05em;
-text-transform: uppercase;
-display: inline-block;
+  justify-content: space-between;
+  cursor: pointer;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-color: #567b95;
+  border: 1px solid #326891;
+  font-size: 11px;
+  line-height: 11vh;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  display: inline-block;
 }
 
 .bar2 {
@@ -117,7 +116,7 @@ display: inline-block;
 }
 
 #header-title {
-  font-family: Gothenburg Fraktur regular;
+  font-family: "Gothenburg Fraktur regular";
 }
 
 #stock {
@@ -146,13 +145,13 @@ display: inline-block;
 }
 
 @media (min-width: 1070px) {
-  .site-without-fterbig{
+  .site-without-fterbig {
     max-width: 1200px;
   }
 }
 
 @media (min-width: 740px) {
-  .site-without-fterbig{
+  .site-without-fterbig {
     padding: 0 3%;
   }
 }
@@ -169,13 +168,11 @@ display: inline-block;
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
-user agent stylesheet
 div {
-    display: block;
+  display: block;
 }
 
 @media (min-width: 740px) {
@@ -200,7 +197,7 @@ div {
 .first-section-grid {
   display: grid;
   grid-column-gap: calc(1rem * 2 + 1px);
-  grid-template-columns: repeat(20,1fr);
+  grid-template-columns: repeat(20, 1fr);
 }
 
 .first-para {
@@ -212,7 +209,7 @@ div {
 
 @media (min-width: 740px) {
   .row1:not(:empty) {
-  padding-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 }
 
@@ -227,22 +224,17 @@ div {
   grid-template-columns: repeat(14, 1fr);
 }
 
-.rowtxt {
-  display: block;
-  height: max-content;
-}
-
 @media (min-width: 740px) {
-  .wrap-me1 >*::after {
-    border-bottom: 1px solid #DFDFDF;
+  .wrap-me1 > *::after {
+    border-bottom: 1px solid #dfdfdf;
   } 
 }
 
-.wrap-me1 >*::after {
+.wrap-me1 > *::after {
   display: grid;
   grid-column-gap: calc(1rem * 2 + 1px);
-  grid-template-rows: repeat(5,1fr);
-  content: '';
+  grid-template-rows: repeat(5, 1fr);
+  content: "";
   margin-top: 1rem;
   margin-bottom: 1rem;
   clear: both;
@@ -252,7 +244,7 @@ div {
 .wrap-me-grid {
   display: grid;
   grid-column-gap: calc(1rem * 2 + 1px);
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .live-red {
@@ -272,37 +264,36 @@ div {
     font-size: 0.8rem;
   }
 }
+
 .see-more {
-  font-family: nyt-franklin,helvetica,arial,sans-serif;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
   line-height: 0.9375rem;
   margin-top: 0.37rem;
-  margin: 0;
 }
 
 .wrap-me2 > *::after {
   display: grid;
   grid-column-gap: calc(1rem * 2 + 1px);
-  grid-template-columns: repeat(5,1fr);
-  content: '';
-  display: block;
+  grid-template-columns: repeat(5, 1fr);
+  content: "";
   margin-top: 1rem;
   margin-bottom: 1rem;
   clear: both;
   grid-column: 1/-1;
 }
 
-  @media (min-width: 740px) {
-    .wrap-me2 > *::after {
-      border-bottom: 1px solid var(--color-stroke-quaternary,#DFDFDF);
-    }
+@media (min-width: 740px) {
+  .wrap-me2 > *::after {
+    border-bottom: 1px solid var(--color-stroke-quaternary, #dfdfdf);
   }
+}
 
 h3 {
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
 }
 
 .h3 {
@@ -311,13 +302,13 @@ h3 {
 }
 
 .min-read {
-  font-family: nyt-franklin,helvetica,arial,sans-serif;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
   font-size: 0.625rem;
   line-height: 1.25em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin: 0;
-  color: var(--color-content-quaternary,#727272);
+  color: var(--color-content-quaternary, #727272);
   margin-top: 0.25rem;
 }
 
@@ -325,8 +316,8 @@ p {
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
 }
 
 .img-row {
@@ -346,22 +337,25 @@ p {
 
 figure {
   display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 40px;
-    margin-inline-end: 40px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
 }
-/* here is beginning of my footer section*/
+
+/* here is beginning of my footer section */
 .footer-big {
   margin: 30px 315px auto;
   border-top: double;
   margin-bottom: 3px;
 }
+
 /* the title to the bigger footer up */
 .footer-title {
   background: transparent;
   padding: 2px;
 }
+
 /* adding a flex command to the big footer up */
 .footer-columes {
   display: flex;
