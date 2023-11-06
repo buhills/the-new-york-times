@@ -116,7 +116,9 @@ a {
 }
 
 /* #header-title { */
-  /* font-family: "Gothenburg Fraktur regular"; */
+
+/* font-family: "Gothenburg Fraktur regular"; */
+
 /* } */
 
 #stock {
@@ -225,7 +227,7 @@ div {
 }
 
 @media (min-width: 740px) {
-  .wrap-me1{
+  .wrap-me1 {
     border-bottom: 1px solid #dfdfdf;
   }
 }
