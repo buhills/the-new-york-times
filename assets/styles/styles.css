@@ -1,0 +1,461 @@
+@font-face {
+  font-family: "Gothenburg Fraktur Regular";
+  src: url("../styles/Gothenburg\ Fraktur\ Regular.ttf");
+}
+
+* {
+  margin: 0 auto;
+}
+
+.master-header {
+  opacity: 1;
+  visibility: visible;
+  animation-timing-function: ease-out;
+  animation-delay: 0ms;
+  text-size-adjust: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+@media (min-width: 1150px) {
+  .master-head {
+    margin: auto;
+    padding: 0.3%;
+    max-width: 1200px;
+    position: relative;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bar1 {
+    margin: 0 auto;
+    max-width: 1605px;
+    background: transparent;
+    border-bottom: 0;
+    padding: 4px 15px 8px;
+    height: 36px;
+    position: relative;
+    display: block;
+    justify-content:space-evenly;
+  }
+}
+
+@media (min-width: 1024px) {
+  .search {
+    left: 0;
+  }
+}
+
+.search {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+}
+
+@media (min-width: 1024px) {
+  .lang-us {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .login {
+    top: 4px;
+    right: 0;
+  }
+}
+
+.login {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+}
+
+@media (min-width: 1024px) {
+  .sub {
+    display: inline;
+    margin-right: 7px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+#log {
+  justify-content: space-between;
+  cursor: pointer;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-color: #567b95;
+  border: 1px solid #326891;
+  font-size: 11px;
+  line-height: 11vh;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.bar2 {
+  display: flex;
+  justify-content: space-between;
+  min-width: 80%;
+  min-height: 5vh;
+  background-color: whitesmoke;
+  line-height: 8vh;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid bisque;
+}
+
+#todypaper {
+  display: flex;
+}
+
+/* #header-title { */
+
+/* font-family: "Gothenburg Fraktur regular"; */
+
+/* } */
+
+#stock {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  line-height: 30vh;
+}
+
+.bar3 {
+  display: flex;
+  justify-content: space-between;
+  min-width: 80%;
+  min-height: 5vh;
+  background-color: whitesmoke;
+  line-height: 5vh;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+  border-bottom: double;
+}
+
+#main {
+  height: 100%;
+  margin: 0;
+}
+
+@media (min-width: 1070px) {
+  .site-without-fterbig {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 740px) {
+  .site-without-fterbig {
+    padding: 0 3%;
+  }
+}
+
+.site-without-fterbig {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.phone-tab-desk {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+div {
+  display: block;
+}
+
+@media (min-width: 740px) {
+  .first-page:not(:empty) {
+    padding-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 740px) {
+  .first-page:not(:empty) {
+    padding-bottom: 1.25rem;
+  }
+}
+
+.first-section {
+  display: block;
+  text-size-adjust: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.first-section-grid {
+  display: grid;
+  grid-column-gap: calc(1rem * 2 + 1px);
+  grid-template-columns: repeat(20, 1fr);
+}
+
+.first-para {
+  display: block;
+  min-width: 0;
+  position: relative;
+  grid-column: span 14;
+}
+
+@media (min-width: 740px) {
+  .row1:not(:empty) {
+    padding-bottom: 1.5rem;
+  }
+}
+
+.rowtxt {
+  display: flex;
+  flex: content;
+}
+
+
+.row1-grid {
+  display: grid;
+  grid-column-gap: calc(1rem * 2 + 1px);
+  grid-template-columns: repeat(14, 1fr);
+}
+
+@media (min-width: 740px) {
+  .wrap-me1 {
+    border-bottom: 1px solid #dfdfdf;
+  }
+}
+
+.wrap-me1 > *::after {
+  display: grid;
+  grid-column-gap: calc(1rem * 2 + 1px);
+  grid-template-rows: repeat(5, 1fr);
+  content: "";
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  clear: both;
+  grid-column: 1/-1;
+}
+
+.wrap-me-grid {
+  display: grid;
+  grid-column-gap: calc(1rem * 2 + 1px);
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.live-red {
+  display: flex;
+  align-items: baseline;
+  font-size: 0.6875rem;
+  line-height: 1.25em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 800;
+  white-space: normal;
+  color: #ff3700;
+}
+
+@media (min-width: 740px) {
+  .see-more {
+    font-size: 0.8rem;
+  }
+}
+
+.see-more {
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  line-height: 0.9375rem;
+  margin-top: 0.37rem;
+}
+
+.wrap-me2 > *::after {
+  display: grid;
+  grid-column-gap: calc(1rem * 2 + 1px);
+  grid-template-columns: repeat(5, 1fr);
+  content: "";
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  clear: both;
+  grid-column: 1/-1;
+}
+
+@media (min-width: 740px) {
+  .wrap-me2 > *::after {
+    border-bottom: 1px solid var(--color-stroke-quaternary, #dfdfdf);
+  }
+}
+
+h3 {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+.h3 {
+  font-weight: 70;
+  margin: 0;
+}
+
+.min-read {
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  font-size: 0.625rem;
+  line-height: 1.25em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0;
+  color: var(--color-content-quaternary, #727272);
+  margin-top: 0.25rem;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+.img-row {
+  min-width: 0;
+  position: relative;
+  grid-column: span 9;
+}
+
+.img-rapper {
+  display: block;
+}
+
+.vid-fig1 {
+  margin: 0;
+  margin-bottom: 0.752rem;
+}
+
+figure {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+}
+
+/* here is beginning of my footer section */
+.footer-big {
+  margin: 30px 315px auto;
+  border-top: double;
+  margin-bottom: 3px;
+}
+
+/* the title to the bigger footer up */
+.footer-title {
+  background: transparent;
+  padding: 2px;
+}
+
+/* adding a flex command to the big footer up */
+.footer-columes {
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+  gap: 5px;
+  font-size: smaller;
+}
+
+#news {
+  display: flex;
+}
+
+#opinion {
+  display: flex;
+}
+
+#arts {
+  display: flex;
+}
+
+#living {
+  display: flex;
+}
+
+#more {
+  display: flex;
+}
+
+#subscribe {
+  display: flex;
+}
+
+.footer-small {
+  margin: 10px 315px;
+}
+
+/* the last horezontal footer bigins here */
+#footer-links {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #000;
+  font-weight: lighter;
+  font-size: small;
+  margin-bottom: 5px;
+}
+
+.buttom-links {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+  margin-bottom: 10px;
+}
+
+/* the second part of  the main section beginning fron News */
+
+.topics {
+  display: block;
+  order: 90;
+}
+
+.topics-wrap {
+  border-top: 1px solid;
+  padding-top: 2px;
+  margin-bottom: 15px;
+}
+
+.title-topics{
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.content-topics {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.topics-wall {
+  border-top: 1px solid;
+  padding-top: 2px;
+  margin-bottom: 15px;
+}
+
+.topics-wall4::before {
+  content: "";
+  border-top: 1px double;
+  display: block;
+  padding-top: 35px;
+}
